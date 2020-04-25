@@ -4,10 +4,8 @@ import numpy as np
 def get_metrics(data):
     all_rates = data['rates']
     dates = list(all_rates.keys())
-    print(dates)
 
     currencies = list(all_rates[dates[0]])
-    print(currencies)
 
     # dictionary (currency -> rates over all period)
     currency_rates = {currency: [] for currency in currencies}
